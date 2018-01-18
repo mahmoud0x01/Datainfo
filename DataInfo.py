@@ -197,6 +197,7 @@ def encodefunc():
 			print "OutPut : " + str(newfilename)
 	file.close()
 def pseurand():
+	os.system('sleep 3')
 	randomnum = os.urandom(random).encode("base64")
 	print R + "random number is : " + B + randomnum
 
