@@ -66,7 +66,7 @@ def hashfunc():
 	if checkfileexist==1:
 		pass
 	else:
-		print >> sys.stderr,B + "input file isnt exist ! exiting"
+		print >> sys.stderr,R + "file" + G + " " + input + " " + "is not exist"  + B + " " + "[!]now exiting"
 		sys.exit()
 	file = open(input,'r')
 	file = file.read()
