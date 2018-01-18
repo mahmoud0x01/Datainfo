@@ -51,14 +51,16 @@ def parse_args():
     parser.add_argument('-in', '--input', help='imput file to check')
     parser.add_argument('-e','--encode',help="encode file with string encoding algorithms",choices=["base64","base32","base16"])
     parser.add_argument('-o', '--output', help='Save the hash to text file')
+    parser.add_argument('-r','--random',help="simple crypto PRNG random number generator",type=int,choices=[16,32,64,128,256,512,1024,2048,4096,8192])
     parser.add_argument('-d','--decode',help='decode a file',choices=["base64","base32","base16"])
-    global hash ,input , output , encode ,decode
+    global hash ,input , output , encode ,decode, random
     args = parser.parse_args()
     hash = args.hash
     input = args.input
     output = args.output
     encode = args.encode
     decode = args.decode
+    random = args.random
     return args
 def hashfunc():
 	checkfileexist = os.path.isfile(input)
@@ -195,7 +197,9 @@ def encodefunc():
 			print "InputFile : " + str(input)
 			print "OutPut : " + str(newfilename)
 	file.close()
-
+def pseurand():
+	randomnum = os.urandom(random).encode("base64")
+	print R + "random number is : " + B + randomnum
 # main function
 def main():
 	banner()
@@ -204,4 +208,6 @@ def main():
 		hashfunc()
 	if encode or decode:
 		encodefunc()
+	if random:
+		pseurand():
 if __name__ == '__main__':main()
