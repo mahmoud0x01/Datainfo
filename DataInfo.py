@@ -47,7 +47,7 @@ def parse_args():
     parser = argparse.ArgumentParser(epilog='\tExample: \rpython ' + sys.argv[0] + " -in example.txt --hash sha-256 -a base64 -o example.txt")
     parser.error = parser_error
     parser._optionals.title = "OPTIONS"
-    parser.add_argument('-integrity', '--hash', help="check file integrity with hash functions")
+    parser.add_argument('-integrity', '--hash', help="check file integrity with hash functions",choices=["sha256","sha224","sha512","md5","sha1","sha384"])
     parser.add_argument('-in', '--input', help='imput file to check')
     parser.add_argument('-e','--encode',help="encode file with string encoding algorithms",choices=["base64","base32","base16"])
     parser.add_argument('-o', '--output', help='Save the hash to text file')
