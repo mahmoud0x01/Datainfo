@@ -6,4 +6,5 @@ simple python application to calculate hash functions and encode/decode files
 . argparse
 # install requirements
 `pip install argparse`
-# encryption functions will be added soon
+#soon
+ Cryptographic functions will be added soon for symmetric and asymmetric crypto 
