@@ -1,0 +1,5 @@
+argparse
+pycrypto
+hashlib
+getpass
+logging
