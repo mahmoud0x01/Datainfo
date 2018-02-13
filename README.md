@@ -1,7 +1,7 @@
 # DataInfo
-simple python application to calculate hash functions and encode/decode files and for symmetric cryptography operations 
+simple python application to calculate hash functions and encode/decode files and for symmetric and asymmetric cryptography operations 
 # Usage
-`python DataInfo.py --hash HASH --in INPUT -o HASHOUTPUT -e Encode -d decode -e encrypt -d decrypt`
+`python DataInfo.py -h`
 # requirements
 - argparse
 - pycrypto
@@ -12,6 +12,5 @@ simple python application to calculate hash functions and encode/decode files an
 `pip install -r require.txt`
 # Cryptography
 Currently support aes cbc, cfb,ofb modes soon will add all aes cipher block modes of operations 
-# soon
-- logging and verbose func will be added soon + asymmetric cryptography and TLS protocol and socket programming
+also support rsa key generation with all sizes and supports PEM encryption and support rsa public key exportation
 # please support by cloning ang forks 
