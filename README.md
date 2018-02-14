@@ -9,7 +9,7 @@ simple python application to calculate hash functions and encode/decode files an
 - logging
 - hashlib
 # install requirements
-`pip install -r require.txt`
+`pip install -r requirements.txt`
 # Cryptography
 Currently support aes cbc, cfb,ofb modes soon will add all aes cipher block modes of operations 
 also support rsa key generation with all sizes and supports PEM encryption and support rsa public key exportation
