@@ -5,7 +5,7 @@ import logging
 from Crypto.Cipher import AES
 from Crypto.Util import Counter
 from Crypto import Random
-from Crypto.PublicKey import RSA,DSA
+from Crypto.PublicKey import RSA
 import os
 import sys
 import argparse
