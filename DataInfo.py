@@ -35,7 +35,7 @@ def banner():
 	os.system('sleep 0.2')
 	print B +"""		|_____/ \__,_|\__\__,_|_____|_| |_|_| \___/ """
 	os.system('sleep 0.2')
-	print R +""" 		  # coded by mahmoudadel - facebook.com/0x0ff1    """
+	print R +""" 		  # coded by mahmoudadel - facebook.com/mahmoudadel0x    """
 	print W + """													
 
 
