@@ -487,6 +487,7 @@ def PublicKeyCrypto(input,output,form,password):
 			print B + "[*]" + "writing pem keys to :" + output
 			f.write(str(key.exportKey('DER')) + "\n")
 		f.close()
+		os.chmod(output, 0700)
 	if rsa == "pub":
 		if input:
 			pass
@@ -548,7 +549,7 @@ if __name__ == '__main__':
 	encrypt = args.encrypt
 	decrypt = args.decrypt
 	keyarg = args.key
-	rsa = args.rsa
+	rsa = int(args.rsa)
 	form = args.form
 	if not output:
 		output = None
